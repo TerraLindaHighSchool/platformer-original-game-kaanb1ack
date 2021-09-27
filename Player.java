@@ -18,35 +18,51 @@ public class Player extends Actor
     private boolean isWalking;
     private boolean isJumping;
     private boolean isFacingLeft;
-    private GreenfootImage[] WALK_ANIMATION;
-    private GreenfootImage STANDING;
-    private float JUMP_FORCE;
-    private float GRAVITY;
-    private Class NEXT_LEVEL;
-    private GreenfootSound MUSIC;
-    
+    private final GreenfootImage[] WALK_ANIMATION;
+    private final GreenfootImage STANDING;
+    private final float JUMP_FORCE;
+    private final float GRAVITY;
+    private final Class NEXT_LEVEL;
+    private final GreenfootSound MUSIC;
+
     public Player(int speed, int jumpForce, float gravity, int maxHealth, int maxPowerup, Class nextLevel, GreenfootSound music)
     {
-    
+        WALK_ANIMATION = new GreenfootImage[]
+        { new GreenfootImage("walk0.png"),
+            new GreenfootImage("walk1.png"),  
+            new GreenfootImage("walk2.png"),  
+            new GreenfootImage("walk3.png"), 
+            new GreenfootImage("walk4.png"),
+            new GreenfootImage("walk5.png"),
+        };
     }
+
+                           
     
     public void act()
     {
         // Add your action code here.
     }
-    
+
     public void addedToWorld(World world) {}
-    
+
     private void walk() {}
+
     private void jump() {}
+
     private void fall() {}
+
     private void animator() {}
+
     private void onCollsion() {}
+
     private void mirrorImages() {}
+
     private void gameOver() {}
+
     private boolean isOnGround() 
     {
         return false;
     }
-    
+
 }
