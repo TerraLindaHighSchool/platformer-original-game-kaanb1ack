@@ -32,7 +32,7 @@ public class Level1 extends World
 
         Door door = new Door();
         addObject(door,1174,42);
-        Player player = new Player();
+        Player player = new Player(3, 5.6f, GRAVITY, 3, 3, Level2.class, MUSIC);
         addObject(player,19,759);
 
         addObject(new Floor(), 600, 800);
