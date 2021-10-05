@@ -161,7 +161,9 @@ public class Player extends Actor
 
     private boolean isOnGround() 
     {
-        return isTouching(Platform.class);
+        Actor ground = getOneObjectAtOffset(0, getImage().getHeight() / 2, Platform.class);
+        
+        return ground != null;
     }
 
 }
