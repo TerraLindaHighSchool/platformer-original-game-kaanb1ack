@@ -83,7 +83,7 @@ public class Player extends Actor
             walkIndex = 0;
         }
         
-        if(Greenfoot.isKeyDown("right"))
+        if(Greenfoot.isKeyDown("d"))
         {
             if(!MUSIC.isPlaying())
             {
@@ -99,7 +99,7 @@ public class Player extends Actor
             move(speed);
         }
         
-        if(Greenfoot.isKeyDown("left"))
+        if(Greenfoot.isKeyDown("a"))
         {
             if(!isFacingLeft)
             {
@@ -111,7 +111,7 @@ public class Player extends Actor
             move(-speed);
         }
         
-        if(!(Greenfoot.isKeyDown("left")) || Greenfoot.isKeyDown("right"))
+        if(!(Greenfoot.isKeyDown("a")) || Greenfoot.isKeyDown("d"))
         {
             isWalking = false;
         }

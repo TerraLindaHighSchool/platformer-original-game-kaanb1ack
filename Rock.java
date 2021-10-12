@@ -20,7 +20,7 @@ public class Rock extends Obstacle
     
     public void act()
     {
-        // Add your action code here.
+        fall();
     }
     
     // Causes the object to fall onto a platform below 

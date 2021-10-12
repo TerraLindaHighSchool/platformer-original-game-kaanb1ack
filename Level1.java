@@ -25,8 +25,14 @@ public class Level1 extends World
         // Create a new world with 1200x800 cells with a cell size of 1x1 pixels.
         super(1200, 800, 1, false); 
         prepare();
+        
     }
-
+    
+    public void act()
+    {
+        spawn();
+    }
+    
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
@@ -64,6 +70,7 @@ public class Level1 extends World
         if(Math.random() < 0.0025)
         {
             addObject(new Rock(GRAVITY), Greenfoot.getRandomNumber(1200), -30);
+            addObject(new AcidRain(GRAVITY), Greenfoot.getRandomNumber(1200), -30);
         }
     }
 }
