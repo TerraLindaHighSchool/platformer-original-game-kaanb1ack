@@ -46,20 +46,15 @@ public class Level2 extends World
         addObject(player,19,759);
 
         addObject(new Floor(), 600, 800);
-        addObject(new BrickWall(), 380, 500);
-        addObject(new BrickWall(), 780, 300);
-        addObject(new BrickWall(), 960, 100);
-        addObject(new SmBrickWall(), 1120, 630);
-        addObject(new SmBrickWall(), 880, 630);
-        addObject(new SmBrickWall(), 420, 160);
-        addObject(new SmBrickWall(), 1000, 200);
-        addObject(new SmBrickWall(), 220, 280);
-        addObject(new TrapDoor(), 60, 400);
-        addObject(new TrapDoor(), 1000, 630);
-        addObject(new Bomb(GRAVITY), 1050, 765);
-        addObject(new Bomb(GRAVITY), 450, 115);
-        addObject(new Gem(), 975, 160);
-        addObject(new Gem(), 1030, 160);
+        addObject(new BrickWall(), 1160, 100);
+        addObject(new SmBrickWall(), 200, 625);
+        addObject(new SmBrickWall(), 600, 625);
+        addObject(new SmBrickWall(), 1000, 625);
+        addObject(new SmBrickWall(), 800, 425);
+        addObject(new SmBrickWall(), 600, 225);
+        addObject(new TrapDoor(), 400, 425);
+        addObject(new Bomb(GRAVITY), 
+        
 
     }
     
