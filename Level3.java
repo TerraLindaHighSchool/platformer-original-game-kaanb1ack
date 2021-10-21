@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Level3 extends World
 {
-    private final float GRAVITY = 0.0667f;
+    private final float GRAVITY = 0.0767f;
     private final GreenfootSound MUSIC = new GreenfootSound("incompetech_tribal.mp3");
     
     private final int SPEED = 3;
@@ -47,19 +47,32 @@ public class Level3 extends World
         addObject(player,19,759);
 
         addObject(new Floor(), 600, 800);
-        addObject(new BrickWall(), 1, 1);
-        addObject(new SmBrickWall(), 1, 1);
-        addObject(new SmBrickWall(), 1, 1);
-        addObject(new SmBrickWall(), 1, 1);
-        addObject(new SmBrickWall(), 1, 1);
-        addObject(new SmBrickWall(), 1, 1);
-        addObject(new TrapDoor(), 1, 1);
-        addObject(new Bomb(GRAVITY), 1, 1);
-        addObject(new Bomb(GRAVITY), 1, 1);
         
 
-
-        
+        BrickWall brickWall2 = new BrickWall();
+        addObject(brickWall2,184,669);
+        TrapDoor trapDoor2 = new TrapDoor();
+        addObject(trapDoor2,484,668);
+        VerticalWall verticalWall = new VerticalWall();
+        addObject(verticalWall,1008,640);
+        VerticalWall verticalWall2 = new VerticalWall();
+        addObject(verticalWall2,1007,489);
+        SmBrickWall smBrickWall6 = new SmBrickWall();
+        addObject(smBrickWall6,1011,324);
+        SmBrickWall smBrickWall7 = new SmBrickWall();
+        addObject(smBrickWall7,846,715);
+        SmBrickWall smBrickWall8 = new SmBrickWall();
+        addObject(smBrickWall8,645,527);
+        SmBrickWall smBrickWall9 = new SmBrickWall();
+        addObject(smBrickWall9,494,432);
+        TrapDoor trapDoor3 = new TrapDoor();
+        addObject(trapDoor3,821,384);
+        SmBrickWall smBrickWall10 = new SmBrickWall();
+        addObject(smBrickWall10,280,509);
+        SmBrickWall smBrickWall11 = new SmBrickWall();
+        addObject(smBrickWall11,107,379);
+        BrickWall brickWall3 = new BrickWall();
+        addObject(brickWall3,440,200);
     }
     
     private void spawn()
