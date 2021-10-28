@@ -57,11 +57,14 @@ public class Level4 extends World
         SmRockWall smRockWall5 = new SmRockWall();
         addObject(smRockWall5,558,532);
         SmRockWall smRockWall6 = new SmRockWall();
-        addObject(smRockWall6,617,497);
-        addObject(new SmRockWall(), 617, 473);
-        addObject(new SmRockWall(), 617, 449);
-        addObject(new SmRockWall(), 617, 425);
-        addObject(new SmRockWall(), 617, 401);
+
+        addObject(new SmRockWall(), 650, 401);
+        SmRockWall smRockWall7 = new SmRockWall();
+        addObject(smRockWall7,1143,294);
+        RockTrapDoor rockTrapDoor2 = new RockTrapDoor();
+        addObject(rockTrapDoor2,886,370);
+        Door door = new Door();
+        addObject(door,1174,236);
     }
     
     private void spawn()
