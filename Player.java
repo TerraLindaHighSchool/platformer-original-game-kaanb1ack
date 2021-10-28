@@ -198,6 +198,13 @@ public class Player extends Actor
         {
             yVelocity = -1;
             fall();
+            
+        }
+        
+        if(isTouching(Lava.class))
+        {
+            Greenfoot.playSound("explosionSmall.wav");
+            healthCount --;
         }
         }
     
@@ -214,7 +221,7 @@ public class Player extends Actor
     {
         if(healthCount == 0)
         {
-            Greenfoot.setWorld(new Level1());
+            Greenfoot.setWorld(new LoseSplash());
         }
     }
 
