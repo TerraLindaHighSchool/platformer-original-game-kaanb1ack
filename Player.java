@@ -9,7 +9,6 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Player extends Actor
 {
     private Health[] health;
-    private Powerup[] powerup;
     private int healthCount;
     private int speed;
     private int walkIndex;
