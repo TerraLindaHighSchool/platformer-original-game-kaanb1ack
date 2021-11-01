@@ -15,7 +15,7 @@ public class Missle extends Obstacle
     public void act()
     {
         fall();
-        move(4);
+        move(-6);
         spawn();
     }
     

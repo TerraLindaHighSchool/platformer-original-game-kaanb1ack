@@ -9,7 +9,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Level5 extends World
 {
     private final float GRAVITY = 0.0767f;
-    private final GreenfootSound MUSIC = new GreenfootSound("incompetech_tribal.mp3");
+    private final GreenfootSound MUSIC = new GreenfootSound("BossTheme.mp3");
+    
     
     private final int SPEED = 3;
     private final float JUMP_FORCE = 5.6f;
@@ -88,6 +89,9 @@ public class Level5 extends World
         addObject(rockTrapDoor4,882,235);
         Boss boss = new Boss();
         addObject(boss,1117,660);
+        door.setLocation(1119,710);
+        Missle missle = new Missle();
+        addObject(missle,1119,710);
     }
     
     private void spawn()

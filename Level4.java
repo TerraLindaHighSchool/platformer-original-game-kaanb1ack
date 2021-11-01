@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Level4 extends World
 {
     private final float GRAVITY = 0.0767f;
-    private final GreenfootSound MUSIC = new GreenfootSound("incompetech_tribal.mp3");
+    private final GreenfootSound MUSIC = new GreenfootSound("BossTheme.mp3");
     
     private final int SPEED = 3;
     private final float JUMP_FORCE = 5.6f;
